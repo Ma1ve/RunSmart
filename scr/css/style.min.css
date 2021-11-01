@@ -327,7 +327,7 @@
 }
 
 .carousel {
-  padding: 81px 0;
+  padding: 81px 0 40px 0;
 }
 
 .carousel__iner {
@@ -378,6 +378,22 @@
   margin-bottom: 60px;
 }
 
+.catalog__contend {
+  margin-top: 60px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__contend_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .catalog__tab {
   margin: 0 5px;
   width: 220px;
@@ -416,6 +432,8 @@
   min-height: 440px;
   border: 2px solid #D0D0D0;
   padding: 20px 18px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .catalog-item a {
@@ -431,6 +449,86 @@
 
 .catalog-item hr {
   margin: 17px 0;
+}
+
+.catalog-item__back {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(calc(-50% - 19px));
+          transform: translateX(calc(-50% - 19px));
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #C70101;
+  text-transform: uppercase;
+}
+
+.catalog-item__back:hover {
+  color: #C70101;
+}
+
+.catalog-item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc( 200% + 40px);
+}
+
+.catalog-item__content {
+  width: 50%;
+  margin-right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.catalog-item__content_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  margin-right: 20px;
+}
+
+.catalog-item__list {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  padding-right: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  margin-bottom: 0;
+  padding-left: 19px;
+  list-style-type: none;
+}
+
+.catalog-item__list_active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-left: 0px;
+}
+
+.catalog-item__list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.catalog-item__list li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #C70101;
+  top: 9px;
+  left: -14px;
 }
 
 .catalog__img img {
