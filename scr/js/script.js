@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
   $('.carousel__iner').slick({
     speed: 500,
     adaptiveHeight: true,
@@ -13,4 +13,23 @@ $(document).ready(function(){
     }]
   }
   );
-});
+}); */
+
+var slider = tns({
+    container: '.carousel__iner',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    controls: false,
+    nav: false
+    
+  });
+
+document.querySelector('.slick-prev').addEventListener('click',function () {
+  slider.goTo("prev");
+})
+
+document.querySelector('.slick-next').addEventListener('click',function () {
+  slider.goTo("next");
+})
+

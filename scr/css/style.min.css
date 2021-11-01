@@ -39,6 +39,7 @@
 }
 
 .container-fixed {
+  position: relative;
   max-width: 950px;
   margin: 0 auto;
 }
@@ -340,5 +341,10 @@
 
 .slick-slide img {
   width: 100%;
+}
+
+.tns-item img {
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.min.css.map */
