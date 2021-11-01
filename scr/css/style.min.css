@@ -206,6 +206,15 @@
   font-size: 16px;
 }
 
+.button_view {
+  margin-left: 25px;
+  width: 135px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .benefits {
   min-height: 470px;
   padding: 70px 0 64px 0;
@@ -281,6 +290,14 @@
   text-align: left;
 }
 
+.title_catalog {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 46px;
+  color: #0D0D0D;
+  text-align: center;
+}
+
 .feed-form {
   margin-top: 36px;
   display: -webkit-box;
@@ -346,5 +363,117 @@
 .tns-item img {
   display: block;
   margin: 0 auto;
+}
+
+.catalog__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  margin-bottom: 60px;
+}
+
+.catalog__tab {
+  margin: 0 5px;
+  width: 220px;
+  height: 50px;
+  border: 2px solid #D0D0D0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6B6B6B;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.catalog__tab div {
+  -webkit-transform: skewX(25deg);
+          transform: skewX(25deg);
+}
+
+.catalog__tab:hover {
+  -webkit-box-shadow: 3px 3px 20px #C70101;
+          box-shadow: 3px 3px 20px #C70101;
+  border: none;
+}
+
+.catalog__tab_active {
+  background-color: #C70101;
+  color: #FFFFFF;
+  border: none;
+}
+
+.catalog-item {
+  width: 300px;
+  min-height: 440px;
+  border: 2px solid #D0D0D0;
+  padding: 20px 18px;
+}
+
+.catalog-item a {
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  color: #C70101;
+}
+
+.catalog-item a:hover {
+  color: #C70101;
+}
+
+.catalog-item hr {
+  margin: 17px 0;
+}
+
+.catalog__img img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #0D0D0D;
+  margin-bottom: 15px;
+}
+
+.catalog__subtitle {
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #0D0D0D;
+}
+
+.catalog__old {
+  font-weight: 300;
+  font-size: 14px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #555555;
+}
+
+.catalog__new {
+  font-weight: 700;
+  font-size: 20px;
+  color: #050505;
+}
+
+.catalog__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.min.css.map */
